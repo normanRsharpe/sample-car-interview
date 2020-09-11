@@ -20,14 +20,22 @@ class Car {
     public void accelerate(int vel, String direction) {
         if(direction.equals("x")){
             this.xVel = vel;
-        } else {
+        } else if(direction.equals("y")) {
             this.yVel = vel;
         }
     }
 
     //Getters
     public String getMake() {
-        return make;
+        return this.make;
+    }
+
+    public int getxVel(){
+        return this.xVel;
+    }
+
+    public int getyVel() {
+        return yVel;
     }
 
     //Setters
